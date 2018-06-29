@@ -1,0 +1,28 @@
+{
+  "name": "angular-message-board",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LiteMasteralex/angular-message-board"
+  },
+  "author": {
+    "name": "Javier Alejandro Lara Cuevas",
+    "email": "alexlara_97@hotmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LiteMasteralex/angular-message-board/issues"
+  },
+  "main": "angular-message-board.umd.js",
+  "module": "angular-message-board.js",
+  "jsnext:main": "angular-message-board.js",
+  "typings": "angular-message-board.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

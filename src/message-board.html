@@ -1,0 +1,36 @@
+<div class="col-sm-6">
+  <div class="panel panel-primary">
+    <div class="panel-heading" id="accordion">
+      <span class="glyphicon glyphicon-comment"></span> Mensajes
+    </div>
+    <div class="panel-collapse body" id="collapseOne">
+      <div class="panel-body">
+        <ul class="chat">
+          <!-- Repeat from here -->
+          <li class="left clearfix" ng-repeat="message in firebaseMessages | orderBy:'-'">
+            <span class="chat-img pull-left">
+              <img src="{{message.image_src}}" alt="User Avatar" class="img-circle" height="50" width="50"/>
+            </span>
+            <div class="chat-body clearfix">
+              <div class="header">
+                <strong class="primary-font">{{message.user_name}}</strong> <small class="pull-right text-muted">
+                  <span class="glyphicon glyphicon-time"></span>{{message.date}}</small>
+              </div>
+              <p>
+                {{message.message}}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="panel-footer">
+        <div class="input-group">
+          <input ng-model="messageBoardHash.message" id="msg-brd" type="text" class="form-control input-sm" placeholder="Type your message here..."/>
+          <span class="input-group-btn">
+            <button class="btn btn-primary btn-sm" id="btn-chat" ng-click="postFirebaseMessage()">Send</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

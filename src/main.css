@@ -1,0 +1,264 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+h1, h2, h3 {
+  color: #133174;
+}
+
+thead {
+  white-space: nowrap;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.login-panel{
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+.v-center{
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+#customBtn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  width: 190px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+#customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  font-family: serif;
+  font-weight: normal;
+}
+span.icon {
+  background: url('/images/g-normal.png') transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Roboto', sans-serif;
+}
+
+.has-arrow-right {
+  height: 40px;
+  position: relative;
+  border-top-right-radius: 0;
+}
+.has-arrow-right:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 20px solid transparent;
+  border-left: 20px solid #133174;
+}
+
+.clickable {
+  cursor: pointer;
+}
+ul {
+  padding-left: 0px !important;
+}
+.navbar .navbar-brand {
+  padding-top: 7px;
+}
+
+/* Horizontal Scroll */
+.horizontal-group {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.horizontal-col{
+  display: inline-block;
+  float: none;
+}
+.table-fixed {
+  table-layout: fixed;
+}
+.td-wrap {
+  word-wrap:break-word
+}
+.wrap-value {
+  white-space: normal !important;
+}
+.btn-scisa {
+  color: #fff;
+  background-color: #fc6422;
+  border-color: #ccc;
+}
+.btn-scisa:hover .btn-scisa:focus .btn-scisa.focus{
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+a {
+  color: #133174;
+}
+
+.pagination > li > a, .pagination > li > span {
+  color: #133174;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: #133174;
+}
+
+.panel-primary > .panel-heading {
+  border-color: #133174;
+  background-color: #133174;
+}
+
+.panel-primary {
+  border-color: #133174;
+}
+
+.panel-heading:focus{outline:0;border:none;}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Chat containers */
+.chat-container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+textarea {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+/* Used for message board box */
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 250px;
+}
